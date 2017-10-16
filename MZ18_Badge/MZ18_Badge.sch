@@ -153,7 +153,7 @@ U 1 1 59C7C28E
 P 8550 1100
 F 0 "J1" H 8550 1300 50  0000 C CNN
 F 1 "Conn_01x04" H 8550 800 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Angled_1x04_Pitch2.54mm" H 8550 1100 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm" H 8550 1100 50  0001 C CNN
 F 3 "" H 8550 1100 50  0001 C CNN
 	1    8550 1100
 	1    0    0    -1  
@@ -161,12 +161,12 @@ $EndComp
 $Comp
 L Conn_01x04 J2
 U 1 1 59C7C3DC
-P 14750 1200
-F 0 "J2" H 14750 1400 50  0000 C CNN
-F 1 "Conn_01x04" H 14750 900 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Angled_1x04_Pitch2.54mm" H 14750 1200 50  0001 C CNN
-F 3 "" H 14750 1200 50  0001 C CNN
-	1    14750 1200
+P 15450 1200
+F 0 "J2" H 15450 1400 50  0000 C CNN
+F 1 "Conn_01x04" H 15450 900 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_2x02_Pitch2.54mm" H 15450 1200 50  0001 C CNN
+F 3 "" H 15450 1200 50  0001 C CNN
+	1    15450 1200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -188,7 +188,7 @@ F 11 "" H 13000 -3050 50  0001 C CNN "Height"
 	1    11050 900 
 	1    0    0    -1  
 $EndComp
-Text GLabel 14550 1400 0    47   Input ~ 0
+Text GLabel 15250 1400 0    47   Input ~ 0
 GND
 Text GLabel 13150 2800 2    47   Input ~ 0
 GND
@@ -257,37 +257,11 @@ F 3 "" H 9900 1450 50  0001 C CNN
 	1    9900 1450
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R2
-U 1 1 59C7FC64
-P 10650 1550
-F 0 "R2" V 10730 1550 50  0000 C CNN
-F 1 "0R" V 10650 1550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 10580 1550 50  0001 C CNN
-F 3 "" H 10650 1550 50  0001 C CNN
-	1    10650 1550
-	1    0    0    -1  
-$EndComp
 Text GLabel 13150 2700 2    47   Input ~ 0
-VDD_TXCO
-Text GLabel 10150 900  0    47   Input ~ 0
-VDD_TXCO
-$Comp
-L R R1
-U 1 1 59C80270
-P 10550 900
-F 0 "R1" V 10630 900 50  0000 C CNN
-F 1 "0R" V 10550 900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 10480 900 50  0001 C CNN
-F 3 "" H 10550 900 50  0001 C CNN
-	1    10550 900 
-	0    1    1    0   
-$EndComp
-Text GLabel 9800 1800 0    47   Input ~ 0
-VDD_TXCO
-Text GLabel 11050 2600 0    47   Input ~ 0
+3V
+Text GLabel 9600 2600 0    47   Input ~ 0
 TXD
-Text GLabel 11050 2700 0    47   Input ~ 0
+Text GLabel 9600 2700 0    47   Input ~ 0
 RXD
 $Comp
 L R R4
@@ -303,64 +277,30 @@ $EndComp
 $Comp
 L C C1
 U 1 1 59C81995
-P 13600 1300
-F 0 "C1" H 13625 1400 50  0000 L CNN
-F 1 "1u" H 13625 1200 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 13638 1150 50  0001 C CNN
-F 3 "" H 13600 1300 50  0001 C CNN
-	1    13600 1300
+P 14300 1300
+F 0 "C1" H 14325 1400 50  0000 L CNN
+F 1 "1u" H 14325 1200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 14338 1150 50  0001 C CNN
+F 3 "" H 14300 1300 50  0001 C CNN
+	1    14300 1300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9800 1300 11050 1300
-Wire Wire Line
-	10650 1200 10650 1400
-Wire Wire Line
-	10650 1400 11050 1400
-Connection ~ 10650 1300
-Connection ~ 10400 1300
-Connection ~ 10150 1300
-Connection ~ 9900 1300
-Wire Wire Line
-	9800 1600 10400 1600
-Connection ~ 10150 1600
-Connection ~ 9900 1600
-Connection ~ 10650 1400
-Wire Wire Line
-	10700 900  11050 900 
-Wire Wire Line
-	10150 900  10400 900 
-Wire Wire Line
-	11050 1200 10650 1200
-Wire Wire Line
-	9800 1800 10650 1800
-Wire Wire Line
-	10650 1800 10650 1700
-Wire Wire Line
-	13150 2200 13300 2200
-Wire Wire Line
-	13600 2200 13750 2200
-Wire Wire Line
-	13150 1100 13600 1100
-Text GLabel 13600 1450 3    47   Input ~ 0
+Text GLabel 14300 1450 3    47   Input ~ 0
 GND
-Text GLabel 13600 1050 1    47   Input ~ 0
+Text GLabel 14300 1050 1    47   Input ~ 0
 3V
-Wire Wire Line
-	13600 1050 13600 1150
-Connection ~ 13600 1100
 Text GLabel 13150 2000 2    47   Input ~ 0
 SWDIO_LO
 Text GLabel 13150 2100 2    47   Input ~ 0
 SWDCLK_LO
-Text GLabel 14550 1300 0    47   Input ~ 0
+Text GLabel 15250 1300 0    47   Input ~ 0
 SWDIO_LO
-Text GLabel 14550 1200 0    47   Input ~ 0
+Text GLabel 15250 1200 0    47   Input ~ 0
 SWDCLK_LO
-Text GLabel 13150 1300 2    47   Input ~ 0
+Text GLabel 13850 1300 2    47   Input ~ 0
 NRST_LO
-Text GLabel 14550 1100 0    47   Input ~ 0
-NRST
+Text GLabel 15250 1100 0    47   Input ~ 0
+NRST_LO
 Text GLabel 14550 2600 0    47   Input ~ 0
 NRST_LO
 $Comp
@@ -389,17 +329,6 @@ F 3 "" H 14750 2800 50  0001 C CNN
 $EndComp
 Text GLabel 14750 3050 3    47   Input ~ 0
 GND
-Wire Wire Line
-	14750 2250 14750 2200
-Wire Wire Line
-	14750 2550 14750 2650
-Wire Wire Line
-	14550 2600 15100 2600
-Connection ~ 14750 2600
-Wire Wire Line
-	14750 2950 14750 3050
-Wire Wire Line
-	10700 3400 11050 3400
 $Comp
 L SW_Push SW1
 U 1 1 59CB45F2
@@ -411,18 +340,15 @@ F 3 "" H 15100 3000 50  0001 C CNN
 	1    15100 2800
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	14750 3000 15100 3000
-Connection ~ 14750 3000
 $Comp
 L U.FL J5
 U 1 1 59CB4A41
-P 10500 3400
-F 0 "J5" H 10350 3560 50  0000 L BNN
-F 1 "U.FL" H 10500 3400 50  0001 L BNN
-F 2 "w_conn_rf:coaxial_u.fl-r-smt-1" H 10530 3550 20  0001 C CNN
-F 3 "" H 10500 3400 60  0000 C CNN
-	1    10500 3400
+P 9700 3400
+F 0 "J5" H 9550 3560 50  0000 L BNN
+F 1 "U.FL" H 9700 3400 50  0001 L BNN
+F 2 "w_conn_rf:coaxial_u.fl-r-smt-1" H 9730 3550 20  0001 C CNN
+F 3 "" H 9700 3400 60  0000 C CNN
+	1    9700 3400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -447,41 +373,8 @@ F 3 "" H 1250 9150 50  0001 C CNN
 	1    1250 9150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1250 9000 1250 8950
 Text GLabel 1800 7550 0    47   Input ~ 0
 NRESET
-Wire Wire Line
-	1800 7550 2150 7550
-Wire Wire Line
-	2050 7250 2050 8450
-Wire Wire Line
-	2050 7650 2150 7650
-Wire Wire Line
-	2050 8450 2150 8450
-Connection ~ 2050 7650
-Wire Wire Line
-	1250 9300 1250 9400
-Wire Wire Line
-	2150 10050 1850 10050
-Wire Wire Line
-	1850 10050 1850 10600
-Wire Wire Line
-	2150 10250 1850 10250
-Connection ~ 1850 10250
-Wire Wire Line
-	2150 10350 1850 10350
-Connection ~ 1850 10350
-Wire Wire Line
-	2150 10450 1850 10450
-Connection ~ 1850 10450
-Wire Wire Line
-	5000 7650 4850 7650
-Wire Wire Line
-	5000 7150 5000 7650
-Wire Wire Line
-	4850 7550 5000 7550
-Connection ~ 5000 7550
 $Comp
 L XTALNX5032 X1
 U 1 1 59CD9AE3
@@ -493,14 +386,6 @@ F 3 "" H 1550 8750 60  0001 C CNN
 	1    1550 8750
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	950  8550 2050 8550
-Wire Wire Line
-	2050 8550 2050 8650
-Wire Wire Line
-	2050 8650 2150 8650
-Connection ~ 1550 8950
-Connection ~ 1550 8550
 $Comp
 L C C12
 U 1 1 59CDA487
@@ -512,10 +397,6 @@ F 3 "" H 950 9150 50  0001 C CNN
 	1    950  9150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	950  9400 950  9300
-Wire Wire Line
-	950  9000 950  8550
 $Comp
 L SPX3819M5-L-3-3 U2
 U 1 1 59CDC1F8
@@ -538,13 +419,6 @@ F 3 "" H 1400 1550 50  0001 C CNN
 	1    1400 1550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2450 1350 3100 1350
-Wire Wire Line
-	3100 1150 3100 1400
-Wire Wire Line
-	1250 1350 1850 1350
-Connection ~ 1400 1350
 $Comp
 L C C7
 U 1 1 59CDE629
@@ -567,19 +441,6 @@ F 3 "" H 3100 1550 50  0001 C CNN
 	1    3100 1550
 	1    0    0    -1  
 $EndComp
-Connection ~ 3100 1350
-Wire Wire Line
-	2700 1400 2700 1350
-Connection ~ 2700 1350
-Wire Wire Line
-	2700 1700 2700 1750
-Wire Wire Line
-	2700 1750 3100 1750
-Wire Wire Line
-	3100 1700 3100 1800
-Wire Wire Line
-	1400 1700 1400 1800
-Connection ~ 3100 1750
 $Comp
 L C C9
 U 1 1 59CE059E
@@ -602,21 +463,13 @@ F 3 "" H 3950 1550 50  0001 C CNN
 	1    3950 1550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3600 1700 3600 1800
-Wire Wire Line
-	7050 1750 7050 1900
-Wire Wire Line
-	3600 1300 3600 1400
 Text GLabel 3950 1100 1    47   Input ~ 0
 AREF
-Wire Wire Line
-	3950 1400 3950 1100
 Text GLabel 13750 2200 2    47   Input ~ 0
 GND
-Text GLabel 10400 3700 0    47   Input ~ 0
+Text GLabel 9600 3700 0    47   Input ~ 0
 GND
-Text GLabel 10400 3600 0    47   Input ~ 0
+Text GLabel 9600 3600 0    47   Input ~ 0
 GND
 Text GLabel 11050 3300 0    47   Input ~ 0
 GND
@@ -650,8 +503,6 @@ Text GLabel 3600 1800 3    47   Input ~ 0
 GND
 Text GLabel 7050 1900 3    47   Input ~ 0
 GND
-Wire Wire Line
-	2150 1800 2150 1750
 Text GLabel 4550 1150 1    47   Input ~ 0
 VUSB
 Text GLabel 7050 1200 1    47   Input ~ 0
@@ -667,10 +518,6 @@ F 3 "" H 5650 1600 60  0001 C CNN
 	1    5650 1600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4550 1400 5150 1400
-Wire Wire Line
-	6250 1400 7050 1400
 $Comp
 L C C11
 U 1 1 59CEC921
@@ -684,10 +531,6 @@ F 3 "" H 7050 1600 50  0001 C CNN
 $EndComp
 Text GLabel 3950 1800 3    47   Input ~ 0
 GND
-Wire Wire Line
-	3950 1700 3950 1800
-Wire Wire Line
-	4550 1150 4550 1450
 $Comp
 L LED D2
 U 1 1 59CEE1FB
@@ -699,13 +542,6 @@ F 3 "" H 4550 1600 50  0001 C CNN
 	1    4550 1600
 	0    -1   -1   0   
 $EndComp
-Connection ~ 4550 1400
-Wire Wire Line
-	4550 1750 4550 1800
-Wire Wire Line
-	4550 1800 4800 1800
-Wire Wire Line
-	5100 1800 5150 1800
 $Comp
 L R R6
 U 1 1 59CEE596
@@ -717,21 +553,8 @@ F 3 "" H 6550 1600 50  0001 C CNN
 	1    6550 1600
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6250 1600 6400 1600
-Wire Wire Line
-	6250 1800 7050 1800
-Wire Wire Line
-	6700 1600 6700 1800
-Connection ~ 6700 1800
-Wire Wire Line
-	7050 1200 7050 1450
-Connection ~ 7050 1800
-Connection ~ 7050 1400
 Text GLabel 1250 1050 1    47   Input ~ 0
 VUSB
-Wire Wire Line
-	1250 1050 1250 1350
 $Comp
 L SCHOTTKY-DIODEAG D1
 U 1 1 59CF0208
@@ -743,12 +566,8 @@ F 3 "" H 1400 1200 60  0001 C CNN
 	1    1400 1200
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1400 1300 1400 1400
-Text GLabel 1400 1050 1    47   Input ~ 0
+Text GLabel 1400 1100 1    47   Input ~ 0
 VBAT
-Wire Wire Line
-	1400 1050 1400 1100
 $Comp
 L R R5
 U 1 1 59CF269E
@@ -759,28 +578,6 @@ F 2 "Resistors_SMD:R_0603_HandSoldering" V 1580 1550 50  0001 C CNN
 F 3 "" H 1650 1550 50  0001 C CNN
 	1    1650 1550
 	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1650 1350 1650 1400
-Connection ~ 1650 1350
-Wire Wire Line
-	1650 1700 1650 1800
-Wire Wire Line
-	1650 1800 1800 1800
-Wire Wire Line
-	1800 1450 1800 1850
-Wire Wire Line
-	1800 1450 1850 1450
-$Comp
-L USBMOLEX CN1
-U 1 1 59CF45BC
-P 1800 2950
-F 0 "CN1" H 1400 3290 50  0000 L BNN
-F 1 "USBMOLEX" H 1400 2550 50  0000 L BNN
-F 2 "Connectors_USB:USB_Micro-B_Molex_47346-0001" H 1830 3100 20  0001 C CNN
-F 3 "" H 1800 2950 60  0001 C CNN
-	1    1800 2950
-	1    0    0    -1  
 $EndComp
 Text GLabel 2200 3150 2    47   Input ~ 0
 GND
@@ -816,36 +613,12 @@ F 3 "" H 3600 3250 50  0001 C CNN
 	1    3600 3250
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3600 3400 3600 3450
-Wire Wire Line
-	3600 2700 3600 2650
-Wire Wire Line
-	3600 3000 3600 3100
-Text GLabel 3350 3050 0    47   Input ~ 0
+Text GLabel 3050 3050 0    47   Input ~ 0
 D9
-Wire Wire Line
-	3350 3050 3600 3050
-Connection ~ 3600 3050
-Text GLabel 3350 3150 0    47   Input ~ 0
-A13_I35
-Wire Wire Line
-	3350 3150 3450 3150
-Wire Wire Line
-	3450 3150 3450 3050
-Connection ~ 3450 3050
-Wire Notes Line
-	500  3750 7600 3750
 Text Notes 3950 3600 0    138  ~ 0
 Power supply
 Text Notes 6400 1400 0    47   ~ 0
 10k => 100mA\n5k => 200mA\n2k =>500mA\n1k => 1000mA
-Wire Notes Line
-	7600 3750 7600 500 
-Wire Notes Line
-	9250 500  9250 4250
-Wire Notes Line
-	9250 4250 16050 4250
 Text Notes 13900 4050 0    138  ~ 0
 LoRa
 $Comp
@@ -867,26 +640,8 @@ Text GLabel 9800 10250 3    47   Input ~ 0
 GND
 Text GLabel 8250 10250 3    47   Input ~ 0
 GND
-Wire Wire Line
-	7750 9900 7650 9900
-Wire Wire Line
-	7650 9900 7650 10300
-Wire Wire Line
-	9600 9850 9800 9850
-Wire Wire Line
-	9800 9750 9800 10250
-Wire Wire Line
-	7650 8450 7650 8600
-Wire Wire Line
-	7650 8600 7750 8600
 Text GLabel 2150 9550 0    47   Input ~ 0
 A5
-Wire Wire Line
-	1250 8950 1800 8950
-Wire Wire Line
-	1800 8950 1800 8850
-Wire Wire Line
-	1800 8850 2150 8850
 Text GLabel 2150 9650 0    47   Input ~ 0
 RXLED
 Text GLabel 2150 9750 0    47   Input ~ 0
@@ -959,31 +714,6 @@ Text GLabel 4850 9950 2    47   Input ~ 0
 SWDIO
 Text GLabel 7750 8700 0    47   Input ~ 0
 NRESET
-Text GLabel 7750 8800 0    47   Input ~ 0
-A4_IO36
-Text GLabel 7750 8900 0    47   Input ~ 0
-A3_I39
-Text GLabel 7750 9000 0    47   Input ~ 0
-A2_I34
-Text GLabel 7750 9100 0    47   Input ~ 0
-A13_I35
-Text GLabel 7750 9200 0    47   Input ~ 0
-IO32_A7
-Text GLabel 7750 9300 0    47   Input ~ 0
-IO33_A9
-Text GLabel 7750 9400 0    47   Input ~ 0
-A1_DAC1
-Text GLabel 7750 9500 0    47   Input ~ 0
-A0_DAC2
-Text GLabel 7750 9600 0    47   Input ~ 0
-IO27_A10
-Text GLabel 7750 9800 0    47   Input ~ 0
-IO12_A11
-Text GLabel 7750 9700 0    47   Input ~ 0
-IO14_A6
-Wire Wire Line
-	9600 9750 9800 9750
-Connection ~ 9800 9850
 Text GLabel 6300 2850 0    47   Input ~ 0
 NRESET
 $Comp
@@ -1012,15 +742,6 @@ F 3 "" H 6500 3050 50  0001 C CNN
 $EndComp
 Text GLabel 6500 3300 3    47   Input ~ 0
 GND
-Wire Wire Line
-	6500 2500 6500 2450
-Wire Wire Line
-	6500 2800 6500 2900
-Wire Wire Line
-	6300 2850 6850 2850
-Connection ~ 6500 2850
-Wire Wire Line
-	6500 3200 6500 3300
 $Comp
 L SW_Push SW2
 U 1 1 59D8A925
@@ -1032,9 +753,6 @@ F 3 "" H 6850 3250 50  0001 C CNN
 	1    6850 3050
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6500 3250 6850 3250
-Connection ~ 6500 3250
 $Comp
 L C C15
 U 1 1 59D8CFB4
@@ -1048,8 +766,6 @@ F 3 "" H 1800 7900 50  0001 C CNN
 $EndComp
 Text GLabel 1800 8050 3    47   Input ~ 0
 GND
-Wire Wire Line
-	1800 7750 2150 7750
 $Comp
 L Conn_01x02 J3
 U 1 1 59D8D982
@@ -1084,8 +800,6 @@ Text GLabel 2750 6900 0    47   Input ~ 0
 D1_FLASHMISO
 Text GLabel 2600 6800 0    47   Input ~ 0
 FLASH_CS
-Wire Wire Line
-	2600 6800 2750 6800
 Text GLabel 2700 6350 1    47   Input ~ 0
 3V
 $Comp
@@ -1099,11 +813,6 @@ F 3 "" H 2700 6600 50  0001 C CNN
 	1    2700 6600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2700 6750 2700 6800
-Connection ~ 2700 6800
-Wire Wire Line
-	2700 6450 2700 6350
 Text GLabel 3950 6800 2    47   Input ~ 0
 3V
 Text GLabel 2750 7100 0    47   Input ~ 0
@@ -1191,7 +900,6 @@ F 3 "" H 10750 4475 50  0001 L TNN
 $EndComp
 Text GLabel 1800 1850 3    47   Input ~ 0
 EN
-Connection ~ 1800 1800
 $Comp
 L LED D3
 U 1 1 59D96BAC
@@ -1225,34 +933,12 @@ F 3 "" H 8500 2950 50  0001 C CNN
 	1    8500 2950
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	8500 3100 8500 3250
 Text GLabel 8500 3650 3    47   Input ~ 0
 GND
-Wire Wire Line
-	8500 3550 8500 3650
 Text GLabel 8350 2700 0    47   Input ~ 0
 D13
 Text GLabel 8350 2600 0    47   Input ~ 0
 IO13_A1
-Wire Wire Line
-	8350 2700 8500 2700
-Wire Wire Line
-	8500 2600 8500 2800
-Wire Wire Line
-	8350 2600 8500 2600
-Connection ~ 8500 2700
-$Comp
-L Conn_01x12 J4
-U 1 1 59D9ACE9
-P 15550 5250
-F 0 "J4" H 15550 5850 50  0000 C CNN
-F 1 "Conn_01x12" H 15550 4550 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Angled_2x06_Pitch2.54mm" H 15550 5250 50  0001 C CNN
-F 3 "" H 15550 5250 50  0001 C CNN
-	1    15550 5250
-	1    0    0    -1  
-$EndComp
 Text GLabel 15350 4950 0    47   Input ~ 0
 VUSB
 Text GLabel 15350 4850 0    47   Input ~ 0
@@ -1307,20 +993,10 @@ Text GLabel 15350 7450 0    47   Input ~ 0
 MOSI
 Text GLabel 15350 7350 0    47   Input ~ 0
 SCK
-Text GLabel 8350 10250 3    47   Input ~ 0
-IO13_A12
-Text GLabel 9050 10250 3    47   Input ~ 0
-IO15_A8
 Text GLabel 9150 10250 3    47   Input ~ 0
 GPIO2
 Text GLabel 9600 9650 2    47   Input ~ 0
 GPIO0
-Text GLabel 9600 9550 2    47   Input ~ 0
-A5_IO4
-Text GLabel 9600 9450 2    47   Input ~ 0
-IO16
-Text GLabel 9600 9350 2    47   Input ~ 0
-IO17
 Text GLabel 9600 9250 2    47   Input ~ 0
 SCK
 Text GLabel 9600 9150 2    47   Input ~ 0
@@ -1373,13 +1049,8 @@ Text GLabel 10350 8850 0    47   Input ~ 0
 D+
 Text GLabel 10350 8750 0    47   Input ~ 0
 D-
-Wire Wire Line
-	10200 8250 10350 8250
 Text GLabel 10300 8000 1    47   Input ~ 0
 3V
-Wire Wire Line
-	10300 8250 10300 8000
-Connection ~ 10300 8250
 Text GLabel 11750 8850 2    47   Input ~ 0
 RXD0
 Text GLabel 11750 8750 2    47   Input ~ 0
@@ -1436,6 +1107,497 @@ F 3 "" H 12650 9300 50  0001 C CNN
 	1    12650 9300
 	0    1    1    0   
 $EndComp
+Text GLabel 13250 9500 3    47   Input ~ 0
+NRESET
+Text GLabel 13250 8450 1    47   Input ~ 0
+GPIO0
+Text GLabel 9600 8850 2    47   Input ~ 0
+IO21
+Text GLabel 7750 9700 0    47   Input ~ 0
+D5
+Text GLabel 7750 9600 0    47   Input ~ 0
+D11
+Text GLabel 8350 10250 3    47   Input ~ 0
+D13
+Text GLabel 7750 9300 0    47   Input ~ 0
+D10
+Text GLabel 7750 9800 0    47   Input ~ 0
+D12
+Text GLabel 7750 9200 0    47   Input ~ 0
+D6
+Text GLabel 9050 10250 3    47   Input ~ 0
+D9
+Text GLabel 9600 9550 2    47   Input ~ 0
+A5
+Text GLabel 7750 9400 0    47   Input ~ 0
+A1
+Text GLabel 7750 9000 0    47   Input ~ 0
+A2
+Text GLabel 7750 9500 0    47   Input ~ 0
+A0
+Text GLabel 7750 8900 0    47   Input ~ 0
+A3
+Text GLabel 7750 8800 0    47   Input ~ 0
+A4
+Text GLabel 9600 9350 2    47   Input ~ 0
+D1
+Text GLabel 9600 9450 2    47   Input ~ 0
+D0
+Text GLabel 15350 7950 0    47   Input ~ 0
+GND
+Text GLabel 15350 7850 0    47   Input ~ 0
+IO21
+$Comp
+L Test_Point TP3
+U 1 1 59DD9F6A
+P 10550 2200
+F 0 "TP3" V 10550 2470 50  0000 C CNN
+F 1 "§" H 10550 2400 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 10750 2200 50  0001 C CNN
+F 3 "" H 10750 2200 50  0001 C CNN
+	1    10550 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 59DDD538
+P 9700 2400
+F 0 "R1" V 9780 2400 50  0000 C CNN
+F 1 "100k" V 9700 2400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 9630 2400 50  0001 C CNN
+F 3 "" H 9700 2400 50  0001 C CNN
+	1    9700 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R2
+U 1 1 59DDE1DC
+P 9950 2400
+F 0 "R2" V 10030 2400 50  0000 C CNN
+F 1 "100k" V 9950 2400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 9880 2400 50  0001 C CNN
+F 3 "" H 9950 2400 50  0001 C CNN
+	1    9950 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Test_Point TP4
+U 1 1 59DDED33
+P 10550 2300
+F 0 "TP4" V 10550 2570 50  0000 C CNN
+F 1 "§" H 10550 2500 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 10750 2300 50  0001 C CNN
+F 3 "" H 10750 2300 50  0001 C CNN
+	1    10550 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Test_Point TP5
+U 1 1 59DDEDFE
+P 13650 1500
+F 0 "TP5" V 13650 1770 50  0000 C CNN
+F 1 "§" H 13650 1700 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 13850 1500 50  0001 C CNN
+F 3 "" H 13850 1500 50  0001 C CNN
+	1    13650 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP6
+U 1 1 59DDEEC8
+P 13650 1400
+F 0 "TP6" V 13650 1670 50  0000 C CNN
+F 1 "§" H 13650 1600 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 13850 1400 50  0001 C CNN
+F 3 "" H 13850 1400 50  0001 C CNN
+	1    13650 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP7
+U 1 1 59DDF30B
+P 9700 2750
+F 0 "TP7" V 9700 3020 50  0000 C CNN
+F 1 "§" H 9700 2950 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 9900 2750 50  0001 C CNN
+F 3 "" H 9900 2750 50  0001 C CNN
+	1    9700 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Test_Point TP8
+U 1 1 59DDF415
+P 9950 2750
+F 0 "TP8" V 9950 3020 50  0000 C CNN
+F 1 "§" H 9950 2950 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 10150 2750 50  0001 C CNN
+F 3 "" H 10150 2750 50  0001 C CNN
+	1    9950 2750
+	-1   0    0    1   
+$EndComp
+Text GLabel 9950 2250 1    47   Input ~ 0
+3V
+Text GLabel 9700 2250 1    47   Input ~ 0
+3V
+$Comp
+L C C17
+U 1 1 59DE0830
+P 10000 3650
+F 0 "C17" H 10025 3750 50  0000 L CNN
+F 1 "1u" H 10025 3550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 10038 3500 50  0001 C CNN
+F 3 "" H 10000 3650 50  0001 C CNN
+	1    10000 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C18
+U 1 1 59DE0C7C
+P 10700 3650
+F 0 "C18" H 10725 3750 50  0000 L CNN
+F 1 "1u" H 10725 3550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 10738 3500 50  0001 C CNN
+F 3 "" H 10700 3650 50  0001 C CNN
+	1    10700 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L1
+U 1 1 59DE1A3E
+P 10350 3400
+F 0 "L1" H 10350 3500 50  0000 C CNN
+F 1 "INDUCTOR" H 10350 3350 50  0000 C CNN
+F 2 "Inductors_SMD:L_0603_HandSoldering" H 10350 3400 50  0001 C CNN
+F 3 "" H 10350 3400 50  0001 C CNN
+	1    10350 3400
+	1    0    0    -1  
+$EndComp
+Text GLabel 10700 3800 3    47   Input ~ 0
+GND
+Text GLabel 10000 3800 3    47   Input ~ 0
+GND
+$Comp
+L Test_Point TP1
+U 1 1 59DE44BB
+P 9900 1200
+F 0 "TP1" V 9900 1470 50  0000 C CNN
+F 1 "§" H 9900 1400 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 10100 1200 50  0001 C CNN
+F 3 "" H 10100 1200 50  0001 C CNN
+	1    9900 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Test_Point TP2
+U 1 1 59DE5806
+P 9900 1700
+F 0 "TP2" V 9900 1970 50  0000 C CNN
+F 1 "§" H 9900 1900 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 10100 1700 50  0001 C CNN
+F 3 "" H 10100 1700 50  0001 C CNN
+	1    9900 1700
+	-1   0    0    1   
+$EndComp
+Text Label 10600 2200 0    60   ~ 0
+MOSI_LO
+Text Label 10600 2300 0    60   ~ 0
+MISO_LO
+Text Label 13600 1500 2    60   ~ 0
+SDA_LO
+Text Label 13600 1400 2    60   ~ 0
+SCL_LO
+$Comp
+L Test_Point TP9
+U 1 1 59DF357A
+P 10550 2400
+F 0 "TP9" V 10550 2670 50  0000 C CNN
+F 1 "§" H 10550 2600 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 10750 2400 50  0001 C CNN
+F 3 "" H 10750 2400 50  0001 C CNN
+	1    10550 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Test_Point TP10
+U 1 1 59DF3580
+P 10550 2500
+F 0 "TP10" V 10550 2770 50  0000 C CNN
+F 1 "§" H 10550 2700 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 10750 2500 50  0001 C CNN
+F 3 "" H 10750 2500 50  0001 C CNN
+	1    10550 2500
+	0    -1   -1   0   
+$EndComp
+Text Label 10600 2400 0    60   ~ 0
+SCK_LO
+Text Label 10600 2500 0    60   ~ 0
+NSS_LO
+$Comp
+L USBMINIB CN1
+U 1 1 59DF72F3
+P 1800 2950
+F 0 "CN1" H 1400 3290 50  0000 L BNN
+F 1 "USBMINIB" H 1400 2550 50  0000 L BNN
+F 2 "Connectors_USB:USB_Micro-B_Molex_47346-0001" H 1830 3100 20  0001 C CNN
+F 3 "" H 1800 2950 60  0001 C CNN
+	1    1800 2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 2000 3350 3    47   Input ~ 0
+GND
+$Comp
+L R R15
+U 1 1 59E06EF5
+P 13400 900
+F 0 "R15" V 13480 900 50  0000 C CNN
+F 1 "100k" V 13400 900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13330 900 50  0001 C CNN
+F 3 "" H 13400 900 50  0001 C CNN
+	1    13400 900 
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R16
+U 1 1 59E06EFB
+P 13600 900
+F 0 "R16" V 13680 900 50  0000 C CNN
+F 1 "100k" V 13600 900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 13530 900 50  0001 C CNN
+F 3 "" H 13600 900 50  0001 C CNN
+	1    13600 900 
+	-1   0    0    1   
+$EndComp
+Text GLabel 13600 750  1    47   Input ~ 0
+3V
+Text GLabel 13400 750  1    47   Input ~ 0
+3V
+Wire Wire Line
+	9800 1300 11050 1300
+Wire Wire Line
+	10650 1400 11050 1400
+Connection ~ 10650 1300
+Connection ~ 10400 1300
+Connection ~ 10150 1300
+Connection ~ 9900 1300
+Wire Wire Line
+	9800 1600 10400 1600
+Connection ~ 10150 1600
+Connection ~ 9900 1600
+Wire Wire Line
+	11050 1200 10650 1200
+Wire Wire Line
+	13150 2200 13300 2200
+Wire Wire Line
+	13600 2200 13750 2200
+Wire Wire Line
+	13150 1100 14300 1100
+Wire Wire Line
+	14300 1050 14300 1150
+Connection ~ 14300 1100
+Wire Wire Line
+	14750 2250 14750 2200
+Wire Wire Line
+	14750 2550 14750 2650
+Wire Wire Line
+	14550 2600 15100 2600
+Connection ~ 14750 2600
+Wire Wire Line
+	14750 2950 14750 3050
+Wire Wire Line
+	14750 3000 15100 3000
+Connection ~ 14750 3000
+Wire Wire Line
+	1250 9000 1250 8950
+Wire Wire Line
+	1800 7550 2150 7550
+Wire Wire Line
+	2050 7250 2050 8450
+Wire Wire Line
+	2050 7650 2150 7650
+Wire Wire Line
+	2050 8450 2150 8450
+Connection ~ 2050 7650
+Wire Wire Line
+	1250 9300 1250 9400
+Wire Wire Line
+	2150 10050 1850 10050
+Wire Wire Line
+	1850 10050 1850 10600
+Wire Wire Line
+	2150 10250 1850 10250
+Connection ~ 1850 10250
+Wire Wire Line
+	2150 10350 1850 10350
+Connection ~ 1850 10350
+Wire Wire Line
+	2150 10450 1850 10450
+Connection ~ 1850 10450
+Wire Wire Line
+	5000 7650 4850 7650
+Wire Wire Line
+	5000 7150 5000 7650
+Wire Wire Line
+	4850 7550 5000 7550
+Connection ~ 5000 7550
+Wire Wire Line
+	950  8550 2050 8550
+Wire Wire Line
+	2050 8550 2050 8650
+Wire Wire Line
+	2050 8650 2150 8650
+Connection ~ 1550 8950
+Connection ~ 1550 8550
+Wire Wire Line
+	950  9400 950  9300
+Wire Wire Line
+	950  9000 950  8550
+Wire Wire Line
+	2450 1350 3100 1350
+Wire Wire Line
+	3100 1150 3100 1400
+Wire Wire Line
+	1250 1350 1850 1350
+Connection ~ 1400 1350
+Connection ~ 3100 1350
+Wire Wire Line
+	2700 1400 2700 1350
+Connection ~ 2700 1350
+Wire Wire Line
+	2700 1700 2700 1750
+Wire Wire Line
+	2700 1750 3100 1750
+Wire Wire Line
+	3100 1700 3100 1800
+Wire Wire Line
+	1400 1700 1400 1800
+Connection ~ 3100 1750
+Wire Wire Line
+	3600 1700 3600 1800
+Wire Wire Line
+	7050 1750 7050 1900
+Wire Wire Line
+	3600 1300 3600 1400
+Wire Wire Line
+	3950 1400 3950 1100
+Wire Wire Line
+	2150 1800 2150 1750
+Wire Wire Line
+	4550 1400 5150 1400
+Wire Wire Line
+	6250 1400 7050 1400
+Wire Wire Line
+	3950 1700 3950 1800
+Wire Wire Line
+	4550 1150 4550 1450
+Connection ~ 4550 1400
+Wire Wire Line
+	4550 1750 4550 1800
+Wire Wire Line
+	4550 1800 4800 1800
+Wire Wire Line
+	5100 1800 5150 1800
+Wire Wire Line
+	6250 1600 6400 1600
+Wire Wire Line
+	6250 1800 7050 1800
+Wire Wire Line
+	6700 1600 6700 1800
+Connection ~ 6700 1800
+Wire Wire Line
+	7050 1200 7050 1450
+Connection ~ 7050 1800
+Connection ~ 7050 1400
+Wire Wire Line
+	1250 1050 1250 1350
+Wire Wire Line
+	1400 1300 1400 1400
+Wire Wire Line
+	1650 1350 1650 1400
+Connection ~ 1650 1350
+Wire Wire Line
+	1650 1700 1650 1800
+Wire Wire Line
+	1650 1800 1800 1800
+Wire Wire Line
+	1800 1450 1800 1850
+Wire Wire Line
+	1800 1450 1850 1450
+Wire Wire Line
+	3600 3400 3600 3450
+Wire Wire Line
+	3600 2700 3600 2650
+Wire Wire Line
+	3600 3000 3600 3100
+Wire Wire Line
+	3350 3050 3600 3050
+Connection ~ 3600 3050
+Wire Notes Line
+	500  3750 7600 3750
+Wire Notes Line
+	7600 3750 7600 500 
+Wire Notes Line
+	9250 500  9250 4250
+Wire Notes Line
+	9250 4250 16050 4250
+Wire Wire Line
+	7750 9900 7650 9900
+Wire Wire Line
+	7650 9900 7650 10300
+Wire Wire Line
+	9600 9850 9800 9850
+Wire Wire Line
+	9800 9750 9800 10250
+Wire Wire Line
+	7650 8450 7650 8600
+Wire Wire Line
+	7650 8600 7750 8600
+Wire Wire Line
+	1250 8950 1800 8950
+Wire Wire Line
+	1800 8950 1800 8850
+Wire Wire Line
+	1800 8850 2150 8850
+Wire Wire Line
+	9600 9750 9800 9750
+Connection ~ 9800 9850
+Wire Wire Line
+	6500 2500 6500 2450
+Wire Wire Line
+	6500 2800 6500 2900
+Wire Wire Line
+	6300 2850 6850 2850
+Connection ~ 6500 2850
+Wire Wire Line
+	6500 3200 6500 3300
+Wire Wire Line
+	6500 3250 6850 3250
+Connection ~ 6500 3250
+Wire Wire Line
+	1800 7750 2150 7750
+Wire Wire Line
+	2600 6800 2750 6800
+Wire Wire Line
+	2700 6750 2700 6800
+Connection ~ 2700 6800
+Wire Wire Line
+	2700 6450 2700 6350
+Connection ~ 1800 1800
+Wire Wire Line
+	8500 3100 8500 3250
+Wire Wire Line
+	8500 3550 8500 3650
+Wire Wire Line
+	8350 2700 8500 2700
+Wire Wire Line
+	8500 2600 8500 2800
+Wire Wire Line
+	8350 2600 8500 2600
+Connection ~ 8500 2700
+Wire Wire Line
+	10200 8250 10350 8250
+Wire Wire Line
+	10300 8250 10300 8000
+Connection ~ 10300 8250
 Wire Wire Line
 	12300 8650 12500 8650
 Wire Wire Line
@@ -1454,85 +1616,406 @@ Wire Wire Line
 Wire Wire Line
 	12450 9100 13250 9100
 Connection ~ 12450 8650
-Text GLabel 13250 9500 3    47   Input ~ 0
-NRESET
-Text GLabel 13250 8450 1    47   Input ~ 0
-GPIO0
-Text GLabel 9600 8850 2    47   Input ~ 0
-IO21
-Text GLabel 14750 5650 2    47   Input ~ 0
-D5
-Text GLabel 14750 5250 2    47   Input ~ 0
-D11
-Text GLabel 14750 5050 2    47   Input ~ 0
-D13
-Text GLabel 14750 5350 2    47   Input ~ 0
-D10
-Text GLabel 14750 5150 2    47   Input ~ 0
-D12
-Text GLabel 14750 5550 2    47   Input ~ 0
-D6
-Text GLabel 14750 5450 2    47   Input ~ 0
-D9
-Text GLabel 14750 7250 2    47   Input ~ 0
-A5
-Text GLabel 14750 6850 2    47   Input ~ 0
-A1
-Text GLabel 14750 6950 2    47   Input ~ 0
-A2
-Text GLabel 14750 6750 2    47   Input ~ 0
-A0
-Text GLabel 14750 7050 2    47   Input ~ 0
-A3
-Text GLabel 14750 7150 2    47   Input ~ 0
-A4
-Text GLabel 14750 7750 2    47   Input ~ 0
-D1
-Text GLabel 14750 7650 2    47   Input ~ 0
-D0
-Text GLabel 14750 5350 0    47   Input ~ 0
-IO33_A9
-Text GLabel 14750 6850 0    47   Input ~ 0
-A1_DAC1
-Text GLabel 14750 6750 0    47   Input ~ 0
-A0_DAC2
-Text GLabel 14750 5150 0    47   Input ~ 0
-IO12_A11
-Text GLabel 14750 5050 0    47   Input ~ 0
-IO13_A12
-Text GLabel 14750 5650 0    47   Input ~ 0
-IO14_A6
-Text GLabel 14750 5550 0    47   Input ~ 0
-IO32_A7
-Text GLabel 14750 5450 0    47   Input ~ 0
-IO15_A8
-Text GLabel 14750 7150 0    47   Input ~ 0
-A4_IO36
-Text GLabel 14750 7050 0    47   Input ~ 0
-A3_I39
-Text GLabel 14750 6950 0    47   Input ~ 0
-A2_I34
-Text GLabel 14750 5250 0    47   Input ~ 0
-IO27_A10
-Text GLabel 14750 7250 0    47   Input ~ 0
-A5_IO4
-Text GLabel 14750 7750 0    47   Input ~ 0
-IO17
-Text GLabel 14750 7650 0    47   Input ~ 0
-IO16
+Wire Wire Line
+	13150 2600 13350 2600
+Wire Wire Line
+	13350 2600 13350 2500
+Wire Wire Line
+	13350 2500 13150 2500
+Wire Wire Line
+	9600 2600 11050 2600
+Wire Wire Line
+	9600 2700 11050 2700
+Wire Wire Line
+	9700 2550 9700 2750
+Connection ~ 9700 2600
+Wire Wire Line
+	9950 2550 9950 2750
+Connection ~ 9950 2700
+Wire Wire Line
+	9900 3400 10100 3400
+Wire Wire Line
+	10000 3400 10000 3500
+Connection ~ 10000 3400
+Wire Wire Line
+	10600 3400 11050 3400
+Wire Wire Line
+	10700 3400 10700 3500
+Connection ~ 10700 3400
+Wire Wire Line
+	10650 1200 10650 1400
+Wire Wire Line
+	9900 1200 9900 1300
+Wire Wire Line
+	9900 1700 9900 1600
+Wire Wire Line
+	10550 2200 11050 2200
+Wire Wire Line
+	11050 2300 10550 2300
+Wire Wire Line
+	13150 1500 13650 1500
+Wire Wire Line
+	13150 1400 13650 1400
+Wire Wire Line
+	13850 1300 13150 1300
+Wire Wire Line
+	10550 2400 11050 2400
+Wire Wire Line
+	11050 2500 10550 2500
+Wire Wire Line
+	13600 1050 13600 1400
+Connection ~ 13600 1400
+Wire Wire Line
+	13400 1050 13400 1500
+Connection ~ 13400 1500
 $Comp
-L Conn_01x17 J6
-U 1 1 59DD084C
-P 15550 7150
-F 0 "J6" H 15550 8050 50  0000 C CNN
-F 1 "Conn_01x17" H 15550 6250 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Angled_1x17_Pitch2.54mm" H 15550 7150 50  0001 C CNN
-F 3 "" H 15550 7150 50  0001 C CNN
-	1    15550 7150
-	1    0    0    -1  
+L Test_Point TP11
+U 1 1 59E0A866
+P 15350 4750
+F 0 "TP11" V 15350 5020 50  0000 C CNN
+F 1 "§" H 15350 4950 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 4750 50  0001 C CNN
+F 3 "" H 15550 4750 50  0001 C CNN
+	1    15350 4750
+	0    1    1    0   
 $EndComp
-Text GLabel 15350 7950 0    47   Input ~ 0
-GND
-Text GLabel 15350 7850 0    47   Input ~ 0
-IO21
+$Comp
+L Test_Point TP12
+U 1 1 59E0B9B8
+P 15350 4850
+F 0 "TP12" V 15350 5120 50  0000 C CNN
+F 1 "§" H 15350 5050 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 4850 50  0001 C CNN
+F 3 "" H 15550 4850 50  0001 C CNN
+	1    15350 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP13
+U 1 1 59E0BAA4
+P 15350 4950
+F 0 "TP13" V 15350 5220 50  0000 C CNN
+F 1 "§" H 15350 5150 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 4950 50  0001 C CNN
+F 3 "" H 15550 4950 50  0001 C CNN
+	1    15350 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP14
+U 1 1 59E0BB93
+P 15350 5050
+F 0 "TP14" V 15350 5320 50  0000 C CNN
+F 1 "§" H 15350 5250 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 5050 50  0001 C CNN
+F 3 "" H 15550 5050 50  0001 C CNN
+	1    15350 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP15
+U 1 1 59E0C04D
+P 15350 5150
+F 0 "TP15" V 15350 5420 50  0000 C CNN
+F 1 "§" H 15350 5350 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 5150 50  0001 C CNN
+F 3 "" H 15550 5150 50  0001 C CNN
+	1    15350 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP16
+U 1 1 59E0C053
+P 15350 5250
+F 0 "TP16" V 15350 5520 50  0000 C CNN
+F 1 "§" H 15350 5450 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 5250 50  0001 C CNN
+F 3 "" H 15550 5250 50  0001 C CNN
+	1    15350 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP17
+U 1 1 59E0C059
+P 15350 5350
+F 0 "TP17" V 15350 5620 50  0000 C CNN
+F 1 "§" H 15350 5550 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 5350 50  0001 C CNN
+F 3 "" H 15550 5350 50  0001 C CNN
+	1    15350 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP18
+U 1 1 59E0C05F
+P 15350 5450
+F 0 "TP18" V 15350 5720 50  0000 C CNN
+F 1 "§" H 15350 5650 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 5450 50  0001 C CNN
+F 3 "" H 15550 5450 50  0001 C CNN
+	1    15350 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP19
+U 1 1 59E0C239
+P 15350 5550
+F 0 "TP19" V 15350 5820 50  0000 C CNN
+F 1 "§" H 15350 5750 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 5550 50  0001 C CNN
+F 3 "" H 15550 5550 50  0001 C CNN
+	1    15350 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP20
+U 1 1 59E0C23F
+P 15350 5650
+F 0 "TP20" V 15350 5920 50  0000 C CNN
+F 1 "§" H 15350 5850 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 5650 50  0001 C CNN
+F 3 "" H 15550 5650 50  0001 C CNN
+	1    15350 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP21
+U 1 1 59E0C245
+P 15350 5750
+F 0 "TP21" V 15350 6020 50  0000 C CNN
+F 1 "§" H 15350 5950 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 5750 50  0001 C CNN
+F 3 "" H 15550 5750 50  0001 C CNN
+	1    15350 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP22
+U 1 1 59E0C24B
+P 15350 5850
+F 0 "TP22" V 15350 6120 50  0000 C CNN
+F 1 "§" H 15350 6050 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 5850 50  0001 C CNN
+F 3 "" H 15550 5850 50  0001 C CNN
+	1    15350 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP23
+U 1 1 59E0C251
+P 15350 6350
+F 0 "TP23" V 15350 6620 50  0000 C CNN
+F 1 "§" H 15350 6550 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 6350 50  0001 C CNN
+F 3 "" H 15550 6350 50  0001 C CNN
+	1    15350 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP24
+U 1 1 59E0C257
+P 15350 6450
+F 0 "TP24" V 15350 6720 50  0000 C CNN
+F 1 "§" H 15350 6650 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 6450 50  0001 C CNN
+F 3 "" H 15550 6450 50  0001 C CNN
+	1    15350 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP25
+U 1 1 59E0C25D
+P 15350 6550
+F 0 "TP25" V 15350 6820 50  0000 C CNN
+F 1 "§" H 15350 6750 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 6550 50  0001 C CNN
+F 3 "" H 15550 6550 50  0001 C CNN
+	1    15350 6550
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP26
+U 1 1 59E0C263
+P 15350 6650
+F 0 "TP26" V 15350 6920 50  0000 C CNN
+F 1 "§" H 15350 6850 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 6650 50  0001 C CNN
+F 3 "" H 15550 6650 50  0001 C CNN
+	1    15350 6650
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP27
+U 1 1 59E0CB93
+P 15350 6750
+F 0 "TP27" V 15350 7020 50  0000 C CNN
+F 1 "§" H 15350 6950 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 6750 50  0001 C CNN
+F 3 "" H 15550 6750 50  0001 C CNN
+	1    15350 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP28
+U 1 1 59E0CB99
+P 15350 6850
+F 0 "TP28" V 15350 7120 50  0000 C CNN
+F 1 "§" H 15350 7050 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 6850 50  0001 C CNN
+F 3 "" H 15550 6850 50  0001 C CNN
+	1    15350 6850
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP29
+U 1 1 59E0CB9F
+P 15350 6950
+F 0 "TP29" V 15350 7220 50  0000 C CNN
+F 1 "§" H 15350 7150 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 6950 50  0001 C CNN
+F 3 "" H 15550 6950 50  0001 C CNN
+	1    15350 6950
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP30
+U 1 1 59E0CBA5
+P 15350 7050
+F 0 "TP30" V 15350 7320 50  0000 C CNN
+F 1 "§" H 15350 7250 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 7050 50  0001 C CNN
+F 3 "" H 15550 7050 50  0001 C CNN
+	1    15350 7050
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP31
+U 1 1 59E0D415
+P 15350 7150
+F 0 "TP31" V 15350 7420 50  0000 C CNN
+F 1 "§" H 15350 7350 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 7150 50  0001 C CNN
+F 3 "" H 15550 7150 50  0001 C CNN
+	1    15350 7150
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP32
+U 1 1 59E0D41B
+P 15350 7250
+F 0 "TP32" V 15350 7520 50  0000 C CNN
+F 1 "§" H 15350 7450 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 7250 50  0001 C CNN
+F 3 "" H 15550 7250 50  0001 C CNN
+	1    15350 7250
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP33
+U 1 1 59E0D421
+P 15350 7350
+F 0 "TP33" V 15350 7620 50  0000 C CNN
+F 1 "§" H 15350 7550 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 7350 50  0001 C CNN
+F 3 "" H 15550 7350 50  0001 C CNN
+	1    15350 7350
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP34
+U 1 1 59E0D427
+P 15350 7450
+F 0 "TP34" V 15350 7720 50  0000 C CNN
+F 1 "§" H 15350 7650 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 7450 50  0001 C CNN
+F 3 "" H 15550 7450 50  0001 C CNN
+	1    15350 7450
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP35
+U 1 1 59E0D42D
+P 15350 7550
+F 0 "TP35" V 15350 7820 50  0000 C CNN
+F 1 "§" H 15350 7750 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 7550 50  0001 C CNN
+F 3 "" H 15550 7550 50  0001 C CNN
+	1    15350 7550
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP36
+U 1 1 59E0D433
+P 15350 7650
+F 0 "TP36" V 15350 7920 50  0000 C CNN
+F 1 "§" H 15350 7850 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 7650 50  0001 C CNN
+F 3 "" H 15550 7650 50  0001 C CNN
+	1    15350 7650
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP37
+U 1 1 59E0D439
+P 15350 7750
+F 0 "TP37" V 15350 8020 50  0000 C CNN
+F 1 "§" H 15350 7950 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 7750 50  0001 C CNN
+F 3 "" H 15550 7750 50  0001 C CNN
+	1    15350 7750
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP38
+U 1 1 59E0D43F
+P 15350 7850
+F 0 "TP38" V 15350 8120 50  0000 C CNN
+F 1 "§" H 15350 8050 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 7850 50  0001 C CNN
+F 3 "" H 15550 7850 50  0001 C CNN
+	1    15350 7850
+	0    1    1    0   
+$EndComp
+$Comp
+L Test_Point TP39
+U 1 1 59E0D509
+P 15350 7950
+F 0 "TP39" V 15350 8220 50  0000 C CNN
+F 1 "§" H 15350 8150 50  0001 C CNN
+F 2 "MZ18_Badge:Solderpad" H 15550 7950 50  0001 C CNN
+F 3 "" H 15550 7950 50  0001 C CNN
+	1    15350 7950
+	0    1    1    0   
+$EndComp
+$Comp
+L R R17
+U 1 1 59E51852
+P 3200 3050
+F 0 "R17" V 3280 3050 50  0000 C CNN
+F 1 "0" V 3200 3050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3130 3050 50  0001 C CNN
+F 3 "" H 3200 3050 50  0001 C CNN
+	1    3200 3050
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3050 3250 0    47   Input ~ 0
+A13_I35
+$Comp
+L R R18
+U 1 1 59E52D74
+P 3200 3250
+F 0 "R18" V 3280 3250 50  0000 C CNN
+F 1 "0" V 3200 3250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3130 3250 50  0001 C CNN
+F 3 "" H 3200 3250 50  0001 C CNN
+	1    3200 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3350 3250 3450 3250
+Wire Wire Line
+	3450 3250 3450 3050
+Connection ~ 3450 3050
+Text GLabel 7750 9100 0    47   Input ~ 0
+A13_I35
 $EndSCHEMATC

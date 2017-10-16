@@ -1,4 +1,4 @@
-update=29.09.2017 18:13:04
+update=14.10.2017 14:20:33
 version=1
 last_client=kicad
 [pcbnew]
@@ -162,3 +162,13 @@ LibName130=w_transistor
 LibName131=w_vacuum
 LibName132=ESP32-footprints-Shem-Lib
 LibName133=espressif-xess
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
